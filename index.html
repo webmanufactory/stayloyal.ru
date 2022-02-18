@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stayloyal.ru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style/normalize.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <main class="main">
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__column">
+            <button class="header-menu__button">
+              <picture class="info-item__icon">
+                <source srcset="img/icons/menu_icon.svg" type="image/svg+xml">
+                <img src="img/icons/menu_icon.png" alt="icon">
+              </picture>
+            </button>
+            <div class="header-logo">
+              <img src="img/icons/logo.png" alt="" class="header-logo__img">
+            </div>
+          </div>
+          <div class="header__column">
+            <div class="header-links">
+              <a href="" class="header-links__link">о программе</a>
+              <a href="" class="header-links__link">сотрудничество</a>
+            </div>
+          </div>
+          <div class="header__column">
+            <ul class="header-auth__items">
+              <li class="header-auth__item">
+                <a href="" class="auth-item__link">
+                  <picture class="auth-item__icon">
+                    <source srcset="img/icons/person.svg" type="image/svg+xml">
+                    <img src="img/icons/person.png" alt="icon">
+                  </picture>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="login">
+      <div class="container">
+        <div class="login__row">
+          <div class="login__column">
+            <h3 class="login__title">Вход</h3>
+            <form action="post" class="login-form">
+              <div class="login-form__data">
+                <label for="login-form__tel" class="login-form__label">Телефон</label>
+                <input type="tel" name="" id="login-form__tel" class="login-form__input"
+                  placeholder="Введите ваш телефон">
+              </div>
+              <div class="login-form__data">
+                <label for="login-form__code" class="login-form__label">Проверочный код</label>
+                <span class="login-input__text">На ваш номер был отправлен проверочный код</span>
+                <input type="tel" name="" id="login-form__code" class="login-form__input" placeholder="Введите код">
+                <span class="login-input__timer">Повторно отправить код через 0:59</span>
+              </div>
+              <button type="submit" class="login-form__button">Войти</button>
+            </form>
+            <div class="explanation">
+              <h2 class="explanation__title">СТАНЬ УЧАСТНИКОМ ПРОГРАММЫ ЛОЯЛЬНОСТИ НА ВЫГОДНЫХ УСЛОВИЯХ</h2>
+              <h4 class="explanation__subtitle">Как это работает?</h4>
+              <div class="explanation__info">
+                <h5 class="explanation-info__title">Как накапливать баллы</h5>
+                <div class="explanation-info__info">
+                  <object class="explanation-info__icon" type="image/svg+xml" data="img/icons/piggy-bank_icon.svg">
+                    <img class="explanation-info__icon-img" src="img/icons/piggy-bank_icon.png">
+                  </object>
+                  <p class="explanation-info__text">Получайте баллы за участие в программах лояльности наших партнеров.
+                    Ваши баллы накапливаются в личном кабинете. Для входа в личный кабинет авторизуйтесь.</p>
+                </div>
+              </div>
+              <div class="explanation__info">
+                <h5 class="explanation-info__title">Как потратить баллы</h5>
+                <div class="explanation-info__info">
+                  <object class="explanation-info__icon" type="image/svg+xml" data="img/icons/investment_icon.svg">
+                    <img class="explanation-info__icon-img" src="img/icons/investment_icon.png">
+                  </object>
+                  <p class="explanation-info__text">После авторизации вы можете потратить баллы на товары совершая
+                    покупки на этом сайте. Если количество баллов
+                    недостаточно для полного покрытия суммы покупок, можете остаток оплачивать рублями.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="page">
+          <div class="sidebar">
+            <ul class="product-menu">
+              <li class="product-menu__item">
+                <picture class="product-menu__icon">
+                  <source srcset="img/icons/menu.svg" type="image/svg+xml">
+                  <img src="img/icons/menu.png" alt="icon">
+                </picture>
+                <span class="product-menu__title">Каталог</span>
+              </li>
+              <li class="product-menu__submenu">
+                <ul class="product-submenu">
+                  <li class="product-submenu__item">
+                    <a href="" class="product-submenu__link">Электроинструмент</a>
+                  </li>
+                  <li class="product-submenu__item">
+                    <a href="" class="product-submenu__link">Парикмахерские аксессуары</a>
+                  </li>
+                  <li class="product-submenu__item">
+                    <a href="" class="product-submenu__link">Оборудование для салонов красоты</a>
+                  </li>
+                  <li class="product-submenu__item">
+                    <a href="" class="product-submenu__link">Расходные материалы</a>
+                  </li>
+                  <li class="product-submenu__item">
+                    <a href="" class="product-submenu__link">Акционные товары</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <form action="get" class="search-form">
+              <input type="search" name="" id="" class="search-form__input"
+                placeholder="Введите название товара, категории, артикул">
+            </form>
+            <div class="main-content">
+              <div class="catalogue__slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="catalogue-slider__item swiper-slide">
+                    <img src="img/slider-slide.jpg" alt="" class="catalogue-slider__img">
+                  </div>
+                  <div class="catalogue-slider__item swiper-slide">
+                    <img src="img/slider-slide.jpg" alt="" class="catalogue-slider__img">
+                  </div>
+                  <div class="catalogue-slider__item swiper-slide">
+                    <img src="img/slider-slide.jpg" alt="" class="catalogue-slider__img">
+                  </div>
+                </div>
+                <div class="slider-pagination"></div>
+              </div>
+              <div class="catalogue-category">
+                <div class="category-column">
+                  <h3 class="subtitle">Категории</h3>
+                  <ul class="catalogue-category__list">
+                    <li class="catalogue-category__item">
+                      <a href="" class="catalogue-category__link">
+                        <img src="img/hairdryer.jpg" alt="" class="catalogue-link__image">
+                        <span class="catalogue-link__text">Электроинструмент</span>
+                      </a>
+                    </li>
+                    <li class="catalogue-category__item">
+                      <a href="" class="catalogue-category__link">
+                        <img src="img/hairdryer.jpg" alt="" class="catalogue-link__image">
+                        <span class="catalogue-link__text">Парикмахерские аксессуары</span>
+                      </a>
+                    </li>
+                    <li class="catalogue-category__item">
+                      <a href="" class="catalogue-category__link">
+                        <img src="img/hairdryer.jpg" alt="" class="catalogue-link__image">
+                        <span class="catalogue-link__text">Расходные материалы для салонов красоты</span>
+                      </a>
+                    </li>
+                    <li class="catalogue-category__item">
+                      <a href="" class="catalogue-category__link">
+                        <img src="img/hairdryer.jpg" alt="" class="catalogue-link__image">
+                        <span class="catalogue-link__text">Акционные товары</span>
+                      </a>
+                    </li>
+                    <li class="catalogue-category__item">
+                      <a href="" class="catalogue-category__link">
+                        <img src="img/hairdryer.jpg" alt="" class="catalogue-link__image">
+                        <span class="catalogue-link__text">Оборудование для салонов красоты</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <h3 class="subtitle">Популярные товара</h3>
+                  <div class="popular-category__slider">
+                    <div class="swiper-wrapper">
+                      <div class="popular-slider__item swiper-slide">
+                        <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
+                        <div class="popular-item__rating">
+                          <picture class="popular-rating__icon">
+                            <source srcset="img/icons/star.svg" type="image/svg+xml">
+                            <img src="img/icons/star.png" alt="icon">
+                          </picture>
+                          <span class="popular-rating__text">4.6</span>
+                        </div>
+                        <div class="popular-item__image">
+                          <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                        </div>
+                        <div class="populat-item__bottom">
+                          <p class="popular-item__text">
+                            <span class="popular-item__points">5500</span>баллов
+                          </p>
+                          <button class="popular-item__button">
+                            <picture class="popular-button__icon">
+                              <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                              <img src="img/icons/cart-item.png" alt="icon">
+                            </picture>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="popular-slider__item swiper-slide">
+                        <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
+                        <div class="popular-item__rating">
+                          <picture class="popular-rating__icon">
+                            <source srcset="img/icons/star.svg" type="image/svg+xml">
+                            <img src="img/icons/star.png" alt="icon">
+                          </picture>
+                          <span class="popular-rating__text">4.6</span>
+                        </div>
+                        <div class="popular-item__image">
+                          <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                        </div>
+                        <div class="populat-item__bottom">
+                          <p class="popular-item__text">
+                            <span class="popular-item__points">5500</span>баллов
+                          </p>
+                          <button class="popular-item__button">
+                            <picture class="popular-button__icon">
+                              <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                              <img src="img/icons/cart-item.png" alt="icon">
+                            </picture>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="popular-slider__item swiper-slide">
+                        <a href="#" class="popular-item__link">WAHL Magic Clip Cordles Clip Cordles Clip Cordles Clip
+                          Cordles</a>
+                        <div class="popular-item__rating">
+                          <picture class="popular-rating__icon">
+                            <source srcset="img/icons/star.svg" type="image/svg+xml">
+                            <img src="img/icons/star.png" alt="icon">
+                          </picture>
+                          <span class="popular-rating__text">4.6</span>
+                        </div>
+                        <div class="popular-item__image">
+                          <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                        </div>
+                        <div class="populat-item__bottom">
+                          <p class="popular-item__text">
+                            <span class="popular-item__points">5500</span>баллов
+                          </p>
+                          <button class="popular-item__button">
+                            <picture class="popular-button__icon">
+                              <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                              <img src="img/icons/cart-item.png" alt="icon">
+                            </picture>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="popular-slider__item swiper-slide">
+                        <a href="#" class="popular-item__link">Щипцы ROWENTA CV71220</a>
+                        <div class="popular-item__rating">
+                          <picture class="popular-rating__icon">
+                            <source srcset="img/icons/star.svg" type="image/svg+xml">
+                            <img src="img/icons/star.png" alt="icon">
+                          </picture>
+                          <span class="popular-rating__text">4.6</span>
+                        </div>
+                        <div class="popular-item__image">
+                          <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                        </div>
+                        <div class="populat-item__bottom">
+                          <p class="popular-item__text">
+                            <span class="popular-item__points">5500</span>баллов
+                          </p>
+                          <button class="popular-item__button">
+                            <picture class="popular-button__icon">
+                              <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                              <img src="img/icons/cart-item.png" alt="icon">
+                            </picture>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="popular-category__link">Посмотреть все</a>
+                </div>
+                <div class="category-aside"></div>
+              </div>
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Категории</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Электроинструмент</a>
+                </li>
+              </ul>
+              <h3 class="subtitle">Электроинструмент</h3>
+              <div class="sorting">
+                <form action="" method="get" class="sorting__menu">
+                  <select class="sorting__select" size="1" name="" id="">
+                    <option value="">По популярности</option>
+                    <option value="">По цене - дешевле</option>
+                    <option value="">По цене - дороже</option>
+                    <option value="">По личному выбору Ярика</option>
+                  </select>
+                  <div class="sorting__arrow"></div>
+                </form>
+                <div class="sorting__type">
+                  <button class="sorting__button">
+                    <picture class="sorting-button__icon">
+                      <source srcset="img/icons/sorting-grid.svg" type="image/svg+xml">
+                      <img src="img/icons/sorting-grid.png" alt="icon">
+                    </picture>
+                  </button>
+                  <button class="sorting__button">
+                    <picture class="sorting-button__icon active">
+                      <source srcset="img/icons/sorting-list.svg" type="image/svg+xml">
+                      <img src="img/icons/sorting-list.png" alt="icon">
+                    </picture>
+                  </button>
+                </div>
+              </div>
+              <div class="products">
+                <div class="product-card">
+                  <div class="product__image">
+                    <img src="img/hairdryer.jpg" alt="" class="product__img">
+                  </div>
+                  <div class="product__info">
+                    <a href="#" class="product__link">Фен ROWENTA CV7840F0</a>
+                    <span class="product__stock">В наличии</span>
+                    <span class="product__text">Тип фена: обычный</span>
+                    <span class="product__text">Мощность: 2200 Вт</span>
+                    <span class="product__code">Код товара: 153656</span>
+                  </div>
+                  <div class="product__extra">
+                    <div class="product__extra-top">
+                      <div class="product__rating">
+                        <object class="product-rating__icon" type="image/svg+xml" data="img/icons/star.svg">
+                          <img class="product-rating__icon-img" src="img/icons/star.png">
+                        </object>
+                        <span class="product-rating__text">4.6</span>
+                      </div>
+                    </div>
+                    <div class="product__extra-bottom">
+                      <p class="product__point">5500
+                        <span class="product-point__text">Б</span>
+                      </p>
+                      <button class="product__button">
+                        <picture class="product-button__icon">
+                          <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                          <img src="img/icons/cart-item.png" alt="icon">
+                        </picture>
+                        в корзину
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <div class="product__image">
+                    <img src="img/hairdryer.jpg" alt="" class="product__img">
+                  </div>
+                  <div class="product__info">
+                    <a href="#" class="product__link">Фен ROWENTA CV7840F0</a>
+                    <span class="product__stock">В наличии</span>
+                    <span class="product__text">Тип фена: обычный</span>
+                    <span class="product__text">Мощность: 2200 Вт</span>
+                    <span class="product__code">Код товара: 153656</span>
+                  </div>
+                  <div class="product__extra">
+                    <div class="product__extra-top">
+                      <div class="product__rating">
+                        <object class="product-rating__icon" type="image/svg+xml" data="img/icons/star.svg">
+                          <img class="product-rating__icon-img" src="img/icons/star.png">
+                        </object>
+                        <span class="product-rating__text">4.6</span>
+                      </div>
+                    </div>
+                    <div class="product__extra-bottom">
+                      <p class="product__point">5500
+                        <span class="product-point__text">Б</span>
+                      </p>
+                      <button class="product__button">
+                        <picture class="product-button__icon">
+                          <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                          <img src="img/icons/cart-item.png" alt="icon">
+                        </picture>
+                        в корзину
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <ul class="pagination">
+                  <li class="pagination__item active">
+                    <a href="" class="pagination__link">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="" class="pagination__link">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="" class="pagination__link">3</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="" class="pagination__link">4</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="" class="pagination__link">5</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="" class="pagination__link">...</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <ul class="socials__items">
+          <li class="socials__item">
+            <a href="mailto:yaroslav@honeymarketing.ru" class="socials__link">
+              <picture class="socials__icon">
+                <source srcset="img/icons/mail_icon.svg" type="image/svg+xml">
+                <img src="img/icons/mail_icon.png" alt="icon">
+              </picture>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="tg://resolve?domain=<USERNAME>" class="socials__link">
+              <picture class="socials__icon">
+                <source srcset="img/icons/telegram_icon.svg" type="image/svg+xml">
+                <img src="img/icons/telegram_icon.png" alt="icon">
+              </picture>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="https://wa.me/<PHONE>" class="socials__link">
+              <picture class="socials__icon">
+                <source srcset="img/icons/WhatsApp_icon.svg" type="image/svg+xml">
+                <img src="img/icons/WhatsApp_icon.png" alt="icon">
+              </picture>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-links">
+          <li class="footer-links__item">
+            <a href="index.html" class="footer-links__link">
+              <img src="img/icons/logo.png" alt="" class="footer-links__logo">
+            </a>
+          </li>
+          <li class="footer-links__item">
+            <a href="#" class="footer-links__link">сотрудничество</a>
+          </li>
+          <li class="footer-links__item">
+            <a href="#" class="footer-links__link">партнеры</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
