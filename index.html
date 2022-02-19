@@ -61,12 +61,13 @@
               <div class="login-form__data">
                 <label for="login-form__tel" class="login-form__label">Телефон</label>
                 <input type="tel" name="" id="login-form__tel" class="login-form__input"
-                  placeholder="Введите ваш телефон">
+                  placeholder="Введите ваш телефон" required>
               </div>
               <div class="login-form__data">
                 <label for="login-form__code" class="login-form__label">Проверочный код</label>
                 <span class="login-input__text">На ваш номер был отправлен проверочный код</span>
-                <input type="tel" name="" id="login-form__code" class="login-form__input" placeholder="Введите код">
+                <input type="tel" name="" id="login-form__code" class="login-form__input" placeholder="Введите код"
+                  required>
                 <span class="login-input__timer">Повторно отправить код через 0:59</span>
               </div>
               <button type="submit" class="login-form__button">Войти</button>
@@ -100,7 +101,7 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section ">
       <div class="container">
         <div class="page">
           <div class="sidebar">
@@ -189,106 +190,143 @@
                     </li>
                   </ul>
                   <h3 class="subtitle">Популярные товара</h3>
-                  <div class="popular-category__slider">
-                    <div class="swiper-wrapper">
-                      <div class="popular-slider__item swiper-slide">
-                        <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
-                        <div class="popular-item__rating">
-                          <picture class="popular-rating__icon">
-                            <source srcset="img/icons/star.svg" type="image/svg+xml">
-                            <img src="img/icons/star.png" alt="icon">
-                          </picture>
-                          <span class="popular-rating__text">4.6</span>
+                  <div class="popular-category__slider-wrapper">
+                    <div class="popular-category__slider">
+                      <div class="swiper-wrapper">
+                        <div class="popular-slider__item swiper-slide">
+                          <div class="popular-item__card">
+                            <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
+                            <div class="popular-item__rating">
+                              <picture class="popular-rating__icon">
+                                <source srcset="img/icons/star.svg" type="image/svg+xml">
+                                <img src="img/icons/star.png" alt="icon">
+                              </picture>
+                              <span class="popular-rating__text">4.6</span>
+                            </div>
+                            <div class="popular-item__image">
+                              <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                            </div>
+                            <div class="populat-item__bottom">
+                              <p class="popular-item__text">
+                                <span class="popular-item__points">5500</span>баллов
+                              </p>
+                              <button class="popular-item__button">
+                                <picture class="popular-button__icon">
+                                  <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                                  <img src="img/icons/cart-item.png" alt="icon">
+                                </picture>
+                              </button>
+                            </div>
+                          </div>
                         </div>
-                        <div class="popular-item__image">
-                          <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                        <div class="popular-slider__item swiper-slide">
+                          <div class="popular-item__card">
+                            <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
+                            <div class="popular-item__rating">
+                              <picture class="popular-rating__icon">
+                                <source srcset="img/icons/star.svg" type="image/svg+xml">
+                                <img src="img/icons/star.png" alt="icon">
+                              </picture>
+                              <span class="popular-rating__text">4.6</span>
+                            </div>
+                            <div class="popular-item__image">
+                              <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                            </div>
+                            <div class="populat-item__bottom">
+                              <p class="popular-item__text">
+                                <span class="popular-item__points">5500</span>баллов
+                              </p>
+                              <button class="popular-item__button">
+                                <picture class="popular-button__icon">
+                                  <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                                  <img src="img/icons/cart-item.png" alt="icon">
+                                </picture>
+                              </button>
+                            </div>
+                          </div>
                         </div>
-                        <div class="populat-item__bottom">
-                          <p class="popular-item__text">
-                            <span class="popular-item__points">5500</span>баллов
-                          </p>
-                          <button class="popular-item__button">
-                            <picture class="popular-button__icon">
-                              <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
-                              <img src="img/icons/cart-item.png" alt="icon">
-                            </picture>
-                          </button>
+                        <div class="popular-slider__item swiper-slide">
+                          <div class="popular-item__card">
+                            <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
+                            <div class="popular-item__rating">
+                              <picture class="popular-rating__icon">
+                                <source srcset="img/icons/star.svg" type="image/svg+xml">
+                                <img src="img/icons/star.png" alt="icon">
+                              </picture>
+                              <span class="popular-rating__text">4.6</span>
+                            </div>
+                            <div class="popular-item__image">
+                              <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                            </div>
+                            <div class="populat-item__bottom">
+                              <p class="popular-item__text">
+                                <span class="popular-item__points">5500</span>баллов
+                              </p>
+                              <button class="popular-item__button">
+                                <picture class="popular-button__icon">
+                                  <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                                  <img src="img/icons/cart-item.png" alt="icon">
+                                </picture>
+                              </button>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="popular-slider__item swiper-slide">
-                        <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
-                        <div class="popular-item__rating">
-                          <picture class="popular-rating__icon">
-                            <source srcset="img/icons/star.svg" type="image/svg+xml">
-                            <img src="img/icons/star.png" alt="icon">
-                          </picture>
-                          <span class="popular-rating__text">4.6</span>
+                        <div class="popular-slider__item swiper-slide">
+                          <div class="popular-item__card">
+                            <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
+                            <div class="popular-item__rating">
+                              <picture class="popular-rating__icon">
+                                <source srcset="img/icons/star.svg" type="image/svg+xml">
+                                <img src="img/icons/star.png" alt="icon">
+                              </picture>
+                              <span class="popular-rating__text">4.6</span>
+                            </div>
+                            <div class="popular-item__image">
+                              <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                            </div>
+                            <div class="populat-item__bottom">
+                              <p class="popular-item__text">
+                                <span class="popular-item__points">5500</span>баллов
+                              </p>
+                              <button class="popular-item__button">
+                                <picture class="popular-button__icon">
+                                  <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                                  <img src="img/icons/cart-item.png" alt="icon">
+                                </picture>
+                              </button>
+                            </div>
+                          </div>
                         </div>
-                        <div class="popular-item__image">
-                          <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
-                        </div>
-                        <div class="populat-item__bottom">
-                          <p class="popular-item__text">
-                            <span class="popular-item__points">5500</span>баллов
-                          </p>
-                          <button class="popular-item__button">
-                            <picture class="popular-button__icon">
-                              <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
-                              <img src="img/icons/cart-item.png" alt="icon">
-                            </picture>
-                          </button>
-                        </div>
-                      </div>
-                      <div class="popular-slider__item swiper-slide">
-                        <a href="#" class="popular-item__link">WAHL Magic Clip Cordles Clip Cordles Clip Cordles Clip
-                          Cordles</a>
-                        <div class="popular-item__rating">
-                          <picture class="popular-rating__icon">
-                            <source srcset="img/icons/star.svg" type="image/svg+xml">
-                            <img src="img/icons/star.png" alt="icon">
-                          </picture>
-                          <span class="popular-rating__text">4.6</span>
-                        </div>
-                        <div class="popular-item__image">
-                          <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
-                        </div>
-                        <div class="populat-item__bottom">
-                          <p class="popular-item__text">
-                            <span class="popular-item__points">5500</span>баллов
-                          </p>
-                          <button class="popular-item__button">
-                            <picture class="popular-button__icon">
-                              <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
-                              <img src="img/icons/cart-item.png" alt="icon">
-                            </picture>
-                          </button>
-                        </div>
-                      </div>
-                      <div class="popular-slider__item swiper-slide">
-                        <a href="#" class="popular-item__link">Щипцы ROWENTA CV71220</a>
-                        <div class="popular-item__rating">
-                          <picture class="popular-rating__icon">
-                            <source srcset="img/icons/star.svg" type="image/svg+xml">
-                            <img src="img/icons/star.png" alt="icon">
-                          </picture>
-                          <span class="popular-rating__text">4.6</span>
-                        </div>
-                        <div class="popular-item__image">
-                          <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
-                        </div>
-                        <div class="populat-item__bottom">
-                          <p class="popular-item__text">
-                            <span class="popular-item__points">5500</span>баллов
-                          </p>
-                          <button class="popular-item__button">
-                            <picture class="popular-button__icon">
-                              <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
-                              <img src="img/icons/cart-item.png" alt="icon">
-                            </picture>
-                          </button>
+                        <div class="popular-slider__item swiper-slide">
+                          <div class="popular-item__card">
+                            <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
+                            <div class="popular-item__rating">
+                              <picture class="popular-rating__icon">
+                                <source srcset="img/icons/star.svg" type="image/svg+xml">
+                                <img src="img/icons/star.png" alt="icon">
+                              </picture>
+                              <span class="popular-rating__text">4.6</span>
+                            </div>
+                            <div class="popular-item__image">
+                              <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                            </div>
+                            <div class="populat-item__bottom">
+                              <p class="popular-item__text">
+                                <span class="popular-item__points">5500</span>баллов
+                              </p>
+                              <button class="popular-item__button">
+                                <picture class="popular-button__icon">
+                                  <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                                  <img src="img/icons/cart-item.png" alt="icon">
+                                </picture>
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                   </div>
                   <a href="#" class="popular-category__link">Посмотреть все</a>
                 </div>
@@ -422,6 +460,344 @@
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="page">
+          <div class="sidebar">
+          </div>
+          <div class="content">
+            <form action="get" class="search-form">
+              <input type="search" name="" id="" class="search-form__input"
+                placeholder="Введите название товара, категории, артикул">
+            </form>
+            <div class="main-content">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Корзина</a>
+                </li>
+              </ul>
+              <h3 class="subtitle cart__subtitle">Корзина</h3>
+              <span class="cart-counter__counter">2 товара</span>
+              <div class="cart__row">
+                <div class="cart__column">
+                  <div class="cart__product-cards">
+                    <div class="cart__product-card">
+                      <div class="cart__product-image">
+                        <img src="/img/hairdryer.jpg" alt="" class="cart__product-img">
+                      </div>
+                      <div class="cart__product-info">
+                        <a href="#" class="cart__product-link">Фен ROWENTA CV7840F0</a>
+                        <span class="cart__product-stock">В наличии</span>
+                        <div class="cart__counter">
+                          <button class="cart-counter__button">-</button>
+                          <span class="counter">1</span>
+                          <button class="cart-counter__button">+</button>
+                          <span class="cart-counter__amount">шт</span>
+                        </div>
+                        <div class="cart__point">5500<span class="cart__point-text">баллов</span></div>
+                      </div>
+                      <div class="cart__additional">
+                        <button class="cart__product-button">
+                          <picture class="additional__icon">
+                            <source srcset="img/icons/favorite.svg" type="image/svg+xml">
+                            <img src="img/icons/favorite.png" alt="icon">
+                          </picture>
+                        </button>
+                        <button class="cart__product-button">
+                          <picture class="additional__icon">
+                            <source srcset="img/icons/delete.svg" type="image/svg+xml">
+                            <img src="img/icons/delete.png" alt="icon">
+                          </picture>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart__product-card">
+                      <div class="cart__product-image">
+                        <img src="/img/hairdryer.jpg" alt="" class="cart__product-img">
+                      </div>
+                      <div class="cart__product-info">
+                        <a href="#" class="cart__product-link">Щипцы Gemei плойка GM 2933</a>
+                        <span class="cart__product-stock">В наличии</span>
+                        <div class="cart__counter">
+                          <button class="cart-counter__button">-</button>
+                          <span class="counter">1</span>
+                          <button class="cart-counter__button">+</button>
+                          <span class="cart-counter__amount">шт</span>
+                        </div>
+                        <div class="cart__point">5500<span class="cart__point-text">баллов</span></div>
+                      </div>
+                      <div class="cart__additional">
+                        <button class="cart__product-button">
+                          <picture class="additional__icon">
+                            <source srcset="img/icons/favorite.svg" type="image/svg+xml">
+                            <img src="img/icons/favorite.png" alt="icon">
+                          </picture>
+                        </button>
+                        <button class="cart__product-button">
+                          <picture class="additional__icon">
+                            <source srcset="img/icons/delete.svg" type="image/svg+xml">
+                            <img src="img/icons/delete.png" alt="icon">
+                          </picture>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart__buttons">
+                    <button class="cart__favorite cart__button">Добавить все в избранное</button>
+                    <button class="cart__clean cart__button">Очистить корзину</button>
+                  </div>
+                </div>
+                <div class="cart__aside"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart__checkout">
+        <div class="container">
+          <div class="page">
+            <div class="sidebar"></div>
+            <div class="content">
+              <div class="main-content">
+                <div class="cart__row">
+                  <div class="cart__column">
+                    <div class="checkout__row">
+                      <div class="checkout__column"></div>
+                      <div class="checkout__column">
+                        <div class="checkout__general">
+                          <span class="checkout-general__text">Общая сумма</span>
+                          <span class="checkout-general__point">9500<span
+                              class="geberal-point__text">баллов</span></span>
+                        </div>
+                        <div class="checkout__general">
+                          <span class="checkout-general__text">Ваш баланс</span>
+                          <span class="checkout-general__point">8000<span
+                              class="geberal-point__text">баллов</span></span>
+                        </div>
+                        <div class="checkout__general">
+                          <span class="checkout-general__subtext">После списания баллов к оплате требуется:</span>
+                          <span class="checkout-general__point">1500<span
+                              class="geberal-point__text geberal-point__text-curency">₽</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart__buttons buttons__checkout">
+                      <button class="cart__continue cart__button">Продолжить покупки</button>
+                      <button class="cart__checkout-button cart__button">Перейти к оформлению</button>
+                    </div>
+                  </div>
+                  <div class="cart__aside"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="section cart__checkout">
+      <div class="container">
+        <div class="page">
+          <div class="sidebar">
+          </div>
+          <div class="content">
+            <form action="get" class="search-form">
+              <input type="search" name="" id="" class="search-form__input"
+                placeholder="Введите название товара, категории, артикул">
+            </form>
+            <div class="main-content">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Корзина</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Оформление заказа</a>
+                </li>
+              </ul>
+              <h3 class="subtitle checkout__subtitle">Оформление заказа</h3>
+              <div class="cart__row">
+                <div class="cart__column">
+                  <form action="" method="post" class="cart__form">
+                    <h4 class="cart-form__title">1. Адрес получения</h4>
+                    <p class="cart-form__text">Для получения заказа Вам необходимо ввести адрес получения. При выборе
+                      ПВЗ мы отправим товар в ближайший пункт выдачи к
+                      Вашему адресу*</p>
+                    <span class="cart-form__disclaimer">* если в Вашем населенном пункте нет пункта выдачи, то заказ
+                      будет отправлен в ближайший к вам город. Мы свяжемся с Вами
+                      для уточнения.</span>
+                    <div class="cart-form__radios">
+                      <div class="cart-form__radio">
+                        <label for="cart-form__input-radio-1" class="cart-form__input-label cart-form__radio-label">До
+                          ближайшего ПВЗ в Вашем
+                          городе
+                          <input type="radio" name="delivery" id="cart-form__input-radio-1"
+                            class="cart-form__input-radio" checked="checked">
+                          <span class="radio-mark"></span>
+                        </label>
+                      </div>
+                      <div class="cart-form__radio">
+                        <label for="cart-form__input-radio-2"
+                          class="cart-form__input-label cart-form__radio-label">Доставка до двери
+                          <input type="radio" name="delivery" id="cart-form__input-radio-2"
+                            class="cart-form__input-radio">
+                          <span class="radio-mark"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="cart-form__row">
+                      <div class="cart-form__column">
+                        <div class="cart-form__input-text">
+                          <label for="cart-form__input-city"
+                            class="cart-form__input-label cart-form__label-title">Город*</label>
+                          <input type="text" name="" id="cart-form__input-city" class="cart-form__input"
+                            placeholder="Введите ваш город" required>
+                        </div>
+                        <div class="cart-form__input-text">
+                          <label for="cart-form__input-street"
+                            class="cart-form__input-label cart-form__label-title">Улица*</label>
+                          <input type="text" name="" id="cart-form__input-street" class="cart-form__input"
+                            placeholder="Введите вашу улицу" required>
+                        </div>
+                        <div class="cart-form__input-text">
+                          <label for="cart-form__input-home"
+                            class="cart-form__input-label cart-form__label-title">Дом*</label>
+                          <input type="text" name="" id="cart-form__input-home" class="cart-form__input"
+                            placeholder="Введите ваш номер дома" required>
+                        </div>
+                        <div class="cart-form__input-text">
+                          <label for="cart-form__input-add"
+                            class="cart-form__input-label cart-form__label-title">Другое</label>
+                          <input type="text" name="" id="cart-form__input-add" class="cart-form__input"
+                            placeholder="Введите дополнительную информацию">
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="cart-form__title">2. Контактные данные</h4>
+                    <div class="cart-form__row">
+                      <div class="cart-form__column">
+                        <div class="cart-form__input-text">
+                          <label for="cart-form__input-name"
+                            class="cart-form__input-label cart-form__label-title">Имя*</label>
+                          <input type="text" name="" id="cart-form__input-name" class="cart-form__input"
+                            placeholder="Введите ваше имя" required>
+                        </div>
+                        <div class="cart-form__input-text">
+                          <label for="cart-form__input-secondname"
+                            class="cart-form__input-label cart-form__label-title">Фамилия*</label>
+                          <input type="text" name="" id="cart-form__input-secondname" class="cart-form__input"
+                            placeholder="Введите вашу фамилию" required>
+                        </div>
+                        <div class="cart-form__input-text">
+                          <label for="cart-form__input-middlename"
+                            class="cart-form__input-label cart-form__label-title">Отчество*</label>
+                          <input type="text" name="" id="cart-form__input-middlename" class="cart-form__input"
+                            placeholder="Введите ваше отчество">
+                        </div>
+                        <div class="cart-form__input-text">
+                          <label for="cart-form__input-phone"
+                            class="cart-form__input-label cart-form__label-title">Телефон*</label>
+                          <input type="phone" name="" id="cart-form__input-phone" class="cart-form__input"
+                            placeholder="Введите ваш телефон" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-form__checkbox">
+                      <label for="cart-form__input-checkbox" class="cart-form__checkbox-label">Подтверждаю согласие на
+                        обработку персональных данных
+                        <input type="checkbox" name="" id="cart-form__input-checkbox" class="cart-form__input-checkbox"
+                          checked="checked" required>
+                        <span class="checkbox-mark"></span>
+                      </label>
+                    </div>
+                    <div class="cart-form__info">
+                      <h4 class="cart-form__info-title">2 товара в заказе</h4>
+                      <div class="cart-info__row">
+                        <div class="cart-info__column">
+                          <h5 class="cart-info__subtitle">Фен ROWENTA CV7840F0</h5>
+                        </div>
+                        <div class="cart-info__column">
+                          <span class="cart-info__text">5500х1=5500 Баллов</span>
+                        </div>
+                        <div class="cart-info__column">
+                          <h5 class="cart-info__subtitle">Щипцы Gemei плойка GM 2933</h5>
+                        </div>
+                        <div class="cart-info__column">
+                          <span class="cart-info__text">4000х1=4000 Баллов</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checkout__row">
+                      <div class="checkout__column"></div>
+                      <div class="checkout__column">
+                        <div class="checkout__general">
+                          <span class="checkout-general__text">Общая сумма</span>
+                          <span class="checkout-general__point">9500<span
+                              class="geberal-point__text">баллов</span></span>
+                        </div>
+                        <div class="checkout__general">
+                          <span class="checkout-general__text">Ваш баланс</span>
+                          <span class="checkout-general__point">8000<span
+                              class="geberal-point__text">баллов</span></span>
+                        </div>
+                        <div class="checkout__general">
+                          <span class="checkout-general__subtext">После списания баллов к оплате требуется:</span>
+                          <span class="checkout-general__point">1500<span
+                              class="geberal-point__text geberal-point__text-curency">₽</span></span>
+                        </div>
+                      </div>
+                      <div class="checkout__column"></div>
+                      <button class="cart__checkout-button cart__button">Перейти к оплате</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="cart__aside"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="login">
+      <div class="container">
+        <div class="login__row">
+          <div class="login__column">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">Обратная связь</a>
+              </li>
+            </ul>
+            <h3 class="subtitle feedback__subtitle">Обратная связь</h3>
+            <span class="feedback__text">Мы готовы ответить на любые Ваши вопросы!</span>
+            <form action="" class="feedback__form">
+              <div class="feedback__form-input">
+                <label for="feedback-input__input-text" class="feedback-input__label">Тема</label>
+                <input type="text" name="" id="feedback-input__input-text" class="feedback-input__input"
+                  placeholder="Укажите темы вашего письма">
+              </div>
+              <div class="feedback__form-input">
+                <label for="feedback-input__input-textarea" class="feedback-input__label">Текст сообщения</label>
+                <textarea id="feedback-input__input-textarea"
+                  class="feedback-input__input feedback-input__input-textarea" placeholder="Введите Ваше сообщение"
+                  maxlength="500" rows="10" cols="20" required></textarea>
+              </div>
+              <div class="feedback__form-input">
+                <label for="feedback-input__input-mail" class="feedback-input__label">Адрес эл. почты для связи</label>
+                <input type="email" name="" id="feedback-input__input-mail" class="feedback-input__input"
+                  placeholder="Укажите эл. почту для обратной связи" required>
+              </div>
+              <button type="submit" class="feedback-form__button">Отправить</button>
+            </form>
           </div>
         </div>
       </div>

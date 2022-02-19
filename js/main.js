@@ -7,7 +7,14 @@ new Swiper('.catalogue__slider', {
 });
 
 new Swiper('.popular-category__slider', {
-  loop: false,
+
   slidesPerView: 3,
-  spaceBetween: 20,
+  spaceBetween: 10,
+  watchOverflow: true,
+  setWrapperSize: true,
+  freeMode: false,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
