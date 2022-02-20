@@ -41,9 +41,40 @@
             <ul class="header-auth__items">
               <li class="header-auth__item">
                 <a href="" class="auth-item__link">
+                  ИЗБРАННОЕ
+                  <picture class="auth-item__icon">
+                    <source srcset="img/icons/favorites.svg" type="image/svg+xml">
+                    <img src="img/icons/favorites.png" alt="icon">
+                  </picture>
+                </a>
+              </li>
+              <li class="header-auth__item">
+                <a href="" class="auth-item__link">БАЛАНС: 1750</a>
+              </li>
+              <li class="header-auth__item">
+                <a href="" class="auth-item__link">ИВАНОВ С.</a>
+              </li>
+              <li class="header-auth__item">
+                <a href="" class="auth-item__link">
                   <picture class="auth-item__icon">
                     <source srcset="img/icons/person.svg" type="image/svg+xml">
                     <img src="img/icons/person.png" alt="icon">
+                  </picture>
+                </a>
+              </li>
+              <li class="header-auth__item">
+                <a href="" class="auth-item__link">
+                  <picture class="auth-item__icon">
+                    <source srcset="img/icons/cart.svg" type="image/svg+xml">
+                    <img src="img/icons/cart.png" alt="icon">
+                  </picture>
+                </a>
+              </li>
+              <li class="header-auth__item">
+                <a href="" class="auth-item__link">
+                  <picture class="auth-item__icon">
+                    <source srcset="img/icons/exit.svg" type="image/svg+xml">
+                    <img src="img/icons/exit.png" alt="icon">
                   </picture>
                 </a>
               </li>
@@ -101,7 +132,7 @@
         </div>
       </div>
     </section>
-    <section class="section ">
+    <section class="section">
       <div class="container">
         <div class="page">
           <div class="sidebar">
@@ -574,17 +605,17 @@
                         <div class="checkout__general">
                           <span class="checkout-general__text">Общая сумма</span>
                           <span class="checkout-general__point">9500<span
-                              class="geberal-point__text">баллов</span></span>
+                              class="general-point__text">баллов</span></span>
                         </div>
                         <div class="checkout__general">
                           <span class="checkout-general__text">Ваш баланс</span>
                           <span class="checkout-general__point">8000<span
-                              class="geberal-point__text">баллов</span></span>
+                              class="general-point__text">баллов</span></span>
                         </div>
                         <div class="checkout__general">
                           <span class="checkout-general__subtext">После списания баллов к оплате требуется:</span>
                           <span class="checkout-general__point">1500<span
-                              class="geberal-point__text geberal-point__text-curency">₽</span></span>
+                              class="general-point__text general-point__text-curency">₽</span></span>
                         </div>
                       </div>
                     </div>
@@ -740,17 +771,17 @@
                         <div class="checkout__general">
                           <span class="checkout-general__text">Общая сумма</span>
                           <span class="checkout-general__point">9500<span
-                              class="geberal-point__text">баллов</span></span>
+                              class="general-point__text">баллов</span></span>
                         </div>
                         <div class="checkout__general">
                           <span class="checkout-general__text">Ваш баланс</span>
                           <span class="checkout-general__point">8000<span
-                              class="geberal-point__text">баллов</span></span>
+                              class="general-point__text">баллов</span></span>
                         </div>
                         <div class="checkout__general">
                           <span class="checkout-general__subtext">После списания баллов к оплате требуется:</span>
                           <span class="checkout-general__point">1500<span
-                              class="geberal-point__text geberal-point__text-curency">₽</span></span>
+                              class="general-point__text general-point__text-curency">₽</span></span>
                         </div>
                       </div>
                       <div class="checkout__column"></div>
@@ -765,6 +796,94 @@
         </div>
       </div>
     </section>
+
+    <section class="section cart__checkout">
+      <div class="container">
+        <div class="page">
+          <div class="sidebar">
+          </div>
+          <div class="content">
+            <form action="get" class="search-form">
+              <input type="search" name="" id="" class="search-form__input"
+                placeholder="Введите название товара, категории, артикул">
+            </form>
+            <div class="main-content">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Корзина</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Оформление заказа</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Оплата</a>
+                </li>
+              </ul>
+              <h3 class="subtitle checkout__subtitle">Оформление заказа</h3>
+              <div class="cart__row">
+                <div class="cart__column">
+                  <div class="checkout__row">
+                    <div class="checkout__column">
+                      <div class="checkout__general">
+                        <span class="checkout-general__text">Общая сумма</span>
+                        <span class="checkout-general__point">9500<span class="general-point__text">баллов</span></span>
+                      </div>
+                      <div class="checkout__general">
+                        <span class="checkout-general__text">К оплате</span>
+                        <span class="checkout-general__point">1500<span
+                            class="general-point__text general-point__text-curency">₽</span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <form action="post" class="pay__form">
+                    <div class="pay-form__row pay-form__row-wrap">
+                      <div class="pay-form__column">
+                        <div class="pay-form__title">Онлайн оплата</div>
+                        <div class="pay-form__image">
+                          <img src="img/pay.jpg" alt="" class="pay-form__img">
+                        </div>
+                        <div class="pay-form__input-wrap">
+                          <input type="text" name="" id="" class="pay-form__input" placeholder="Номер карты">
+                        </div>
+                        <div class="pay-form__input-wrap">
+                          <input type="text" name="" id="" class="pay-form__input" placeholder="Имя владельца карты">
+                        </div>
+                        <div class="pay-form__input-wrap">
+                          <input type="text" name="" id="" class="pay-form__input" placeholder="ММ/ГГ">
+                        </div>
+                        <div class="pay-form__input-wrap">
+                          <input type="text" name="" id="" class="pay-form__input" placeholder="CVV">
+                        </div>
+                        <div class="cart-form__checkbox">
+                          <label for="pay-form_input-checkbox" class="cart-form__checkbox-label">Запомнить карту
+                            <input type="checkbox" name="" id="pay-form__input-checkbox"
+                              class="cart-form__input-checkbox" checked="checked" required>
+                            <span class="checkbox-mark"></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="pay-form__column"></div>
+                    </div>
+                    <div class="pay-form__row">
+                      <div class="pay-form__column"></div>
+                      <div class="pay-form__column">
+                        <button type="submit"
+                          class="cart__checkout-button cart__button pay-form__button">Оплатить</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="cart__aside"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="login">
       <div class="container">
         <div class="login__row">
@@ -802,30 +921,393 @@
         </div>
       </div>
     </section>
+    <section class="section">
+      <div class="container">
+        <div class="page">
+          <div class="sidebar">
+            <ul class="product-menu">
+              <li class="product-menu__item">
+                <picture class="product-menu__icon">
+                  <source srcset="img/icons/menu.svg" type="image/svg+xml">
+                  <img src="img/icons/menu.png" alt="icon">
+                </picture>
+                <span class="product-menu__title">Каталог</span>
+              </li>
+              <li class="product-menu__submenu">
+                <ul class="product-submenu">
+                  <li class="product-submenu__item">
+                    <a href="" class="product-submenu__link">Электроинструмент</a>
+                  </li>
+                  <li class="product-submenu__item">
+                    <a href="" class="product-submenu__link">Парикмахерские аксессуары</a>
+                  </li>
+                  <li class="product-submenu__item">
+                    <a href="" class="product-submenu__link">Оборудование для салонов красоты</a>
+                  </li>
+                  <li class="product-submenu__item">
+                    <a href="" class="product-submenu__link">Расходные материалы</a>
+                  </li>
+                  <li class="product-submenu__item">
+                    <a href="" class="product-submenu__link">Акционные товары</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <form action="get" class="search-form">
+              <input type="search" name="" id="" class="search-form__input"
+                placeholder="Введите название товара, категории, артикул">
+            </form>
+            <div class="main-content">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Электроинструменты</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="" class="breadcrumbs__link">Фен ROWENTA CV7840F0</a>
+                </li>
+              </ul>
+              <div class="product-gallery">
+                <div class="product-gallery__row">
+                  <div class="product-gallery__sliders-wrap">
+                    <div class="product-gallery__sliders">
+                      <div class="product-gallery__slider-2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="img/catalog/slide00001.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/catalog/slide00002.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/catalog/slide00003.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/catalog/slide00004.jpg" />
+                          </div>
+                        </div>
+                      </div>
+                      <div thumbsSlider="" class="product-gallery__slider-1">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="img/catalog/slide00001.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/catalog/slide00002.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/catalog/slide00003.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/catalog/slide00004.jpg" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next product-gallery-button-next"></div>
+                    <div class="swiper-button-prev product-gallery-button-prev"></div>
+                  </div>
+                  <div class="product-gallery__info">
+                    <h3 class="gallery-info__title">Фен ROWENTA CV7840F0</h3>
+                    <div class="gallery-info__rating">
+                      <div class="gallery-rating__point">
+                        <picture class="gallery-rating__icon">
+                          <source srcset="img/icons/star.svg" type="image/svg+xml">
+                          <img src="img/icons/star.png" alt="icon">
+                        </picture>
+                        <span class="gallery-rating__point-text">4.6</span>
+                      </div>
+                      <span class="gallery-rating__availability">В наличии</span>
+                    </div>
+                    <span class="gallery-info__code">Код товара: 153656</span>
+                    <p class="gallery-info__type">
+                      <span class="gallery-type__text">Тип фена: обычный</span><br>
+                      <span class="gallery-type__text">Мощность: 2200 Вт</span>
+                    </p>
+                    <div class="gallery-info__point">5500
+                      <span class="gallery-point__text">баллов</span>
+                    </div>
+                    <div class="gallery-info__buttons">
+                      <button class="gallery-buttons__cart">В корзину</button>
+                      <div class="gallery-buttons__counter">
+                        <button class="gallery-counter__button">-</button>
+                        <span class="gallery-counter__counter">1</span>
+                        <button class="gallery-counter__button">+</button>
+                        <span class="gallery-counter__amount">шт</span>
+                      </div>
+                      <button class="gallery-buttons__favorite">
+                        <picture class="socials__icon">
+                          <source srcset="img/icons/favor-white.svg" type="image/svg+xml">
+                          <img src="img/icons/favor-white.png" alt="icon">
+                        </picture>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-tabs">
+                <ul class="product-tabs__header">
+                  <li class="product-tabs__header-item tab-trigger active" data-tab="1">Описание</li>
+                  <li class="product-tabs__header-item tab-trigger" data-tab="2">Характеристики</li>
+                </ul>
+                <ul class="product-content">
+                  <li class="product-content__item tab-content active" data-tab-content="1">
+                    <p class="product-content__text">Мощность: 2200 Вт</p>
+                    <p class="product-content__text">Ионизация: да</p>
+                    <p class="product-content__text">Количество температурных режимов: 3</p>
+                    <p class="product-content__text">Количество скоростей: 2</p>
+                    <p class="product-content__text">Насадка-диффузор: да</p>
+                    <p class="product-content__text">Насадка-концентратор: да</p>
+                    <p class="product-content__text">Ультратонкий концентратор: 6 мм</p>
+                    <p class="product-content__text">Насадки: 3 шт.</p>
+                    <p class="product-content__text">Подача холодного воздуха: Да</p>
+                  </li>
+                  <li class="product-content__item tab-content" data-tab-content="2">
+                    <p class="product-content__text">Ох*ительный фен! Покупай, дорогой)</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page page__product-slider">
+          <div class="content content__product-slider">
+            <h3 class="subtitle">Также с этим товаром смотрят</h3>
+            <div class="popular-category__slider-wrapper">
+              <div class="popular-category__slider">
+                <div class="swiper-wrapper">
+                  <div class="popular-slider__item swiper-slide">
+                    <div class="popular-item__card">
+                      <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
+                      <div class="popular-item__rating">
+                        <picture class="popular-rating__icon">
+                          <source srcset="img/icons/star.svg" type="image/svg+xml">
+                          <img src="img/icons/star.png" alt="icon">
+                        </picture>
+                        <span class="popular-rating__text">4.6</span>
+                      </div>
+                      <div class="popular-item__image">
+                        <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                      </div>
+                      <div class="populat-item__bottom">
+                        <p class="popular-item__text">
+                          <span class="popular-item__points">5500</span>баллов
+                        </p>
+                        <button class="popular-item__button">
+                          <picture class="popular-button__icon">
+                            <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                            <img src="img/icons/cart-item.png" alt="icon">
+                          </picture>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular-slider__item swiper-slide">
+                    <div class="popular-item__card">
+                      <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
+                      <div class="popular-item__rating">
+                        <picture class="popular-rating__icon">
+                          <source srcset="img/icons/star.svg" type="image/svg+xml">
+                          <img src="img/icons/star.png" alt="icon">
+                        </picture>
+                        <span class="popular-rating__text">4.6</span>
+                      </div>
+                      <div class="popular-item__image">
+                        <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                      </div>
+                      <div class="populat-item__bottom">
+                        <p class="popular-item__text">
+                          <span class="popular-item__points">5500</span>баллов
+                        </p>
+                        <button class="popular-item__button">
+                          <picture class="popular-button__icon">
+                            <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                            <img src="img/icons/cart-item.png" alt="icon">
+                          </picture>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular-slider__item swiper-slide">
+                    <div class="popular-item__card">
+                      <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
+                      <div class="popular-item__rating">
+                        <picture class="popular-rating__icon">
+                          <source srcset="img/icons/star.svg" type="image/svg+xml">
+                          <img src="img/icons/star.png" alt="icon">
+                        </picture>
+                        <span class="popular-rating__text">4.6</span>
+                      </div>
+                      <div class="popular-item__image">
+                        <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                      </div>
+                      <div class="populat-item__bottom">
+                        <p class="popular-item__text">
+                          <span class="popular-item__points">5500</span>баллов
+                        </p>
+                        <button class="popular-item__button">
+                          <picture class="popular-button__icon">
+                            <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                            <img src="img/icons/cart-item.png" alt="icon">
+                          </picture>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular-slider__item swiper-slide">
+                    <div class="popular-item__card">
+                      <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
+                      <div class="popular-item__rating">
+                        <picture class="popular-rating__icon">
+                          <source srcset="img/icons/star.svg" type="image/svg+xml">
+                          <img src="img/icons/star.png" alt="icon">
+                        </picture>
+                        <span class="popular-rating__text">4.6</span>
+                      </div>
+                      <div class="popular-item__image">
+                        <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                      </div>
+                      <div class="populat-item__bottom">
+                        <p class="popular-item__text">
+                          <span class="popular-item__points">5500</span>баллов
+                        </p>
+                        <button class="popular-item__button">
+                          <picture class="popular-button__icon">
+                            <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                            <img src="img/icons/cart-item.png" alt="icon">
+                          </picture>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular-slider__item swiper-slide">
+                    <div class="popular-item__card">
+                      <a href="#" class="popular-item__link">Фен ROWENTA CV7840F0</a>
+                      <div class="popular-item__rating">
+                        <picture class="popular-rating__icon">
+                          <source srcset="img/icons/star.svg" type="image/svg+xml">
+                          <img src="img/icons/star.png" alt="icon">
+                        </picture>
+                        <span class="popular-rating__text">4.6</span>
+                      </div>
+                      <div class="popular-item__image">
+                        <img src="img/hairdryer.jpg" alt="" class="popular-item__img">
+                      </div>
+                      <div class="populat-item__bottom">
+                        <p class="popular-item__text">
+                          <span class="popular-item__points">5500</span>баллов
+                        </p>
+                        <button class="popular-item__button">
+                          <picture class="popular-button__icon">
+                            <source srcset="img/icons/cart-item.svg" type="image/svg+xml">
+                            <img src="img/icons/cart-item.png" alt="icon">
+                          </picture>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next additional-button-next"></div>
+              <div class="swiper-button-prev additional-button-prev"></div>
+            </div>
+          </div>
+          <div class="sidebar"></div>
+        </div>
+      </div>
+    </section>
+    <section class="login">
+      <div class="container">
+        <div class="login__row">
+          <div class="contact__column">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">Контакты</a>
+              </li>
+            </ul>
+            <h3 class="subtitle contact__subtitle">Контакты</h3>
+            <span class="contact__text">Мы всегда на связи с Вами:</span>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a href="mailto:yaroslav@honeymarketing.ru" class="contact__link">
+                  <picture class="contact__icon">
+                    <source srcset="img/icons/at.svg" type="image/svg+xml">
+                    <img src="img/icons/at.png" alt="icon">
+                  </picture>
+                  Электронная почта
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="tg://resolve?domain=<USERNAME>" class="contact__link">
+                  <picture class="contact__icon">
+                    <source srcset="img/icons/telegram.svg" type="image/svg+xml">
+                    <img src="img/icons/telegram.png" alt="icon">
+                  </picture>
+                  Телеграм
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="https://wa.me/<PHONE>" class="contact__link">
+                  <picture class="contact__icon">
+                    <source srcset="img/icons/whatsapp.svg" type="image/svg+xml">
+                    <img src="img/icons/whatsapp.png" alt="icon">
+                  </picture>
+                  WhatsApp
+                </a>
+              </li>
+            </ul>
+            <h4 class="adress__title">Юридический адрес:</h4>
+            <p class="adress__text">Москва, Петровка, 7, оф.19.</p>
+            <div class="map">
+              <div style="position:relative;overflow:hidden;"><a
+                  href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
+                  href="https://yandex.ru/maps/213/moscow/house/ulitsa_petrovka_7/Z04YcAZnSUIPQFtvfXt3c35nZg==/?indoorLevel=1&ll=37.617079%2C55.762242&utm_medium=mapframe&utm_source=maps&z=16.76"
+                  style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Петровка, 7 —
+                  Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU5ZXtcXD" width="100%" height="340"
+                  frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
+            <h4 class="adress__title">Дополнительная информация:</h4>
+            <p class="adress__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus arcu nibh risus
+              pharetra elementum ultrices mollis nec
+              amet. Morbi lacus, morbi nunc laoreet scelerisque ultrices sed viverra. Ultrices a tincidunt vel eget
+              quis. Aliquet
+              placerat etiam dignissim magna.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <div class="container">
         <ul class="socials__items">
           <li class="socials__item">
             <a href="mailto:yaroslav@honeymarketing.ru" class="socials__link">
               <picture class="socials__icon">
-                <source srcset="img/icons/mail_icon.svg" type="image/svg+xml">
-                <img src="img/icons/mail_icon.png" alt="icon">
+                <source srcset="img/icons/at-black.svg" type="image/svg+xml">
+                <img src="img/icons/at-black.png" alt="icon">
               </picture>
             </a>
           </li>
           <li class="socials__item">
             <a href="tg://resolve?domain=<USERNAME>" class="socials__link">
               <picture class="socials__icon">
-                <source srcset="img/icons/telegram_icon.svg" type="image/svg+xml">
-                <img src="img/icons/telegram_icon.png" alt="icon">
+                <source srcset="img/icons/telegram-black.svg" type="image/svg+xml">
+                <img src="img/icons/telegram-black.png" alt="icon">
               </picture>
             </a>
           </li>
           <li class="socials__item">
             <a href="https://wa.me/<PHONE>" class="socials__link">
               <picture class="socials__icon">
-                <source srcset="img/icons/WhatsApp_icon.svg" type="image/svg+xml">
-                <img src="img/icons/WhatsApp_icon.png" alt="icon">
+                <source srcset="img/icons/whatsapp-black.svg" type="image/svg+xml">
+                <img src="img/icons/whatsapp-black.png" alt="icon">
               </picture>
             </a>
           </li>
