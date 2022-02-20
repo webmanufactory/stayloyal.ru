@@ -293,7 +293,7 @@ html, body {
   padding: 21px 40px 21px 20px;
   width: 100%;
   font-size: 20px;
-  background: url(/img/icons/search.svg) #FFFFFF center right 20px no-repeat;
+  background: url(img/icons/search.svg) #FFFFFF center right 20px no-repeat;
   border-radius: 8px;
   border: none;
 }
@@ -511,7 +511,7 @@ html, body {
   height: 20px;
   font-size: 20px;
   line-height: 0;
-  background: url(/img/icons/angle_bracket.png) center / contain no-repeat;
+  background: url(img/icons/angle_bracket.png) center / contain no-repeat;
   color: rgba(0, 0, 0, 0.54);
 }
 .breadcrumbs__link {
@@ -549,7 +549,7 @@ html, body {
   width: 20px;
   height: 20px;
   line-height: 0;
-  background: url(/img/icons/shevron_selecrt.png) center / contain no-repeat;
+  background: url(img/icons/shevron_selecrt.png) center / contain no-repeat;
   transform: translateY(-50%);
 }
 .sorting__select::-ms-expand{
